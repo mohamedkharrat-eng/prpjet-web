@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>KidCycle - Ajouter Produit</title>
+    <link rel="stylesheet" href="ajoutp.css">
+</head>
+<body>
+<header class="navbar">
+    <div class="logo">Kid<span>Cycle</span></div>
+    <nav>
+        <a href="#">Acheter maintenant</a>
+        <a href="#">Nouveautés</a>
+        <a href="#">Vente</a>
+        <a href="#">Mes produits</a>
+    </nav>
+    <div class="nav-right">
+        <input type="text" placeholder="Search">
+        <button class="search-btn">🔍</button>
+    </div>
+</header>
+<div class="container">
+    <div class="form-card">
+        <h3>Détails du produit</h3>
+
+        <label>ID</label>
+        <input type="text" placeholder="#P-02468" disabled>
+
+        <label>Titre *</label>
+        <input type="text" placeholder="Titre">
+
+        <label>État *</label>
+        <div class="radio-group">
+            <label><input type="radio" name="etat"> Neuf</label>
+            <label><input type="radio" name="etat"> Occasion</label>
+        </div>
+
+        <label>Genre *</label>
+        <select>
+            <option>Genre</option>
+            <option>Garçon</option>
+            <option>Fille</option>
+        </select>
+
+        <label>Catégorie *</label>
+        <select>
+            <option>Catégorie</option>
+            <option>T-shirt</option>
+            <option>Pantalon</option>
+        </select>
+
+        <label>Taille *</label>
+        <select>
+            <option>Taille</option>
+            <option>S</option>
+            <option>M</option>
+            <option>L</option>
+        </select>
+
+        <label>Description *</label>
+        <textarea placeholder="Description"></textarea>
+        <div class="char-count">0/200</div>
+    </div>
+    <div class="upload-card">
+        <h3>Photos *</h3>
+
+        <div class="photo-grid">
+            <div class="upload-box">
+                <span>⬆</span>
+                <p>File uploader<br><small>fichiers jpg/png</small></p>
+            </div>
+
+            <div class="photo-box"></div>
+            <div class="photo-box"></div>
+            <div class="photo-box"></div>
+            <div class="photo-box"></div>
+            <div class="photo-box"></div>
+        </div>
+
+        <button class="publish-btn">Publier →</button>
+    </div>
+
+</div>
+
+</body>
+</html>
